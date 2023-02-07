@@ -11,8 +11,16 @@ Our goal is to situate p number of facilities across n locations such that we ca
 
 Using SPOPT and Folium, together with the SGOneMap API, you can find the geospatial analysis in scrape.ipynb. 
 
+From our P-Dispersion model in Python, we can conclude that there is an overlap in the answer for the P-Dispersion Problem and the Cannibalization Problem.
+Both of these models tend to push facility locations to the furthest corners of the map. - However, is that really beneficial for the service experience?
+
 ### USE THIS LINK TO VIEW THE NOTEBOOK WITH FOLIUM MAPS ### 
 https://nbviewer.org/github/luketankh/BT2403/blob/main/scrape.ipynb
 
 Since Gurobi/Pyomo/Scipy are not yet capable of handing min-max problems, the final model was done in excel. 
 DISCLAIMER : You will not be able to run the excel file using default excel solver.
+
+Additional Resources you may want to look at as a better way of solving this problem:
+1. K-center problem (greedy approximation algorithm for locating k-centers for m positions) 
+2. K-median problem 
+3. Faciliated Location Planning Problem (only if you have the demand data)
